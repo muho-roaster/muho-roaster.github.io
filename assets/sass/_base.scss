@@ -1,0 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&display=swap');
+
+
+
+@mixin w1280() {
+  @media all and (max-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin w870() {
+  @media all and (max-width: 870px) {
+    @content;
+  }
+}
+
+@mixin w430() {
+  @media all and (max-width: 431px) {
+    @content;
+  }
+}
+
+body{
+  background-color: #fff;
+  color: #000;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Noto Serif TC', 'sans-serif';
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0c0c0c;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C5A059;
+}
+
+p{
+  padding: 0;
+  margin: 0;
+}
+
+$gold: #C5A059;
+$goldHover: #ebca8d;
+$text: #EAEAEA;
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style-type: none;
+}

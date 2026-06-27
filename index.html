@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="專為居家設計的 muho 沐火智能陶瓷輻射電熱烘豆機！有自動的火力控制、完善的抽風排煙系統，相同Artisan即時監控烘焙曲線與 RoR 升溫率。體積小巧不佔空間，免除商用烘豆機的昂貴與笨重，讓您在家輕鬆烘出精品咖啡生豆的極致風味，在家烘豆協槓創業的最佳選擇。">
+  <meta name="keywords" content="muho沐火烘豆機, 家用烘豆機推薦, 智能烘豆機, 電熱烘豆機, 無煙烘豆機, 咖啡烘豆機價格, 小型烘豆機">
+  <meta name="author" content="沐火烘豆機" />
+  <meta name="copyright" content="沐火烘豆機"/>
+  <meta property="og:title" content="muho 沐火智能輻射電熱烘豆機 | 家用咖啡烘豆機推薦，自動數位曲線, 微型創業與自家烘焙首選">
+  <meta property="og:description" content="專為居家設計的 muho 沐火智能陶瓷輻射電熱烘豆機！有自動的火力控制、完善的抽風排煙系統，相同Artisan即時監控烘焙曲線與 RoR 升溫率。體積小巧不佔空間，免除商用烘豆機的昂貴與笨重，讓您在家輕鬆烘出精品咖啡生豆的極致風味，在家烘豆協槓創業的最佳選擇。">
+  <meta property="og:image" content="./assets/image/favicon.ico">
+  <link rel="icon" href="./assets/image/favicon.ico" sizes="any">
+  <title>沐火烘豆機｜陶瓷輻射電熱烘豆機</title>
+  
+   <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="./assets/style/app.css">
+  <script src="./assets/script/jquery-3.6.1.min.js"></script>
+ 
+</head>
+<body>
+<header id="navbar">
+  <img src="./assets/image/muho-logo.svg" class="muho" title="沐火烘豆機">
+  <ul class="rlink">
+    <li><a href="#try">現場試機</a></li>
+    <li><a href="#experience">智慧體驗</a></li>
+    <li><a href="#feature">產品特色</a></li>
+    <li><a href="#specs">規格介紹</a></li>
+    <li><a href="#location">體驗地點</a></li>
+    <li><a href="#preorder">限時預購</a></li>
+  </ul>
+</header>
+<div class="slider-bg">
+  <div class="txt">
+    <h2>COFFEE ROSTER</h2>
+    <h1>沐火烘豆機<br>陶瓷輻射電熱式</h1>
+    <p>專為職人與居家烘焙愛好者設計。<br>
+體驗沐火烘豆機帶來的精準溫控與無與倫比的絕佳風味。</p>
+      <ul class="a-wrap">
+        <li><a href="#preorder">立即了解預購</a></li>
+        <li><a href="https://forms.gle/qjh3mPKtZF1oUJQi6" target="_blank">立即預約</a></li>
+      </ul>
+    
+  </div>
+  
+</div>
+<section id="try" class="try-wrap">
+  <div class="title">
+    現場試機好處
+  </div>
+  <div class="listwrap">
+    <div class="list">
+      <div class="icon"><img src="./assets/image/try01.svg" title="沐火烘豆機親手操作"></div>
+      <div class="title">親手操作</div>
+      <p>感受火力反應與機器手感，比單看規格更真實</p>
+    </div>
+    <div class="list">
+      <div class="icon"><img src="./assets/image/try02.svg" title="沐火烘豆機帶豆測試"></div>
+      <div class="title">帶豆測試</div>
+      <p>歡迎攜帶熟悉的生豆，現場觀察風味表現</p>
+    </div>
+    <div class="list">
+      <div class="icon"><img src="./assets/image/try03.svg" title="沐火烘豆機一對一交流"></div>
+      <div class="title">一對一交流</div>
+      <p>依家用、商業、創業需求，推薦適合容量與配置</p>
+    </div>
+  </div>
+  <div class="btnwrap">
+    <a href="https://forms.gle/qjh3mPKtZF1oUJQi6" target="_blank">立即線上預約</a>
+    <a href="https://line.me/R/ti/p/@347axcja" target="_blank">加入好友預約</a>
+  </div>
+</section>
+<section id="experience" class="experience">
+  <div class="info">
+    <h3>OMRON & ARTISAN<br><span>自動重現大師級烘焙曲線</span></h3>
+    <p>透過頂級溫控元件與專業軟體的結合，沐火MUHO-05 能將每一秒的豆溫 (BT)、爐溫 (ET) 與升溫率 (RoR) 精準記錄。</p>
+    <button onclick="startChartAnimation()">
+        <i data-lucide="play-circle" class="w-8 h-8 group-hover:scale-110 transition-transform"></i>
+        <span>點擊體驗曲線模擬</span>
+    </button>
+  </div>
+  <div class="canvas">
+    <div class="stxt">
+      <span> ET (爐溫)</span>
+      <span> BT (豆溫)</span>
+    </div>
+    <canvas id="roastChart" width="600" height="400"></canvas>
+  </div>
+</section>
+<section id="feature" class="feature-wrap">
+  <div class="title">
+    台灣製造，終極保證
+    <p>兩年保固 ‧ 終身保修</p>
+  </div>
+  
+  <div class="card-wrap">
+    <div class="bg-muho-card">
+      <div class="icon"><i data-lucide="zap"></i></div>
+      <h4>高效輻射加熱板</h4>
+      <p><span>德國製造</span>。提供穩定且高穿透力的熱能，確保咖啡豆內外熟度均勻，鎖住最醇厚的風味。</p>
+    </div>
+    <div class="bg-muho-card">
+      <div class="icon"><i data-lucide="activity"></i></div>
+      <h4>自動重現烘焙曲線</h4>
+      <p>搭載 OMRON & ARTISAN 系統。精準記錄並自動重現完美烘焙曲線，新手也能烤出大師級水準。</p>
+    </div>
+    <div class="bg-muho-card">
+      <div class="icon"><i data-lucide="gauge"></i></div>
+      <h4>專業級風壓監控</h4>
+      <p>配備 美國 DWYER 風壓錶。即時掌握爐內氣流狀態，排煙與保留香氣的完美平衡由您掌控。</p>
+    </div>
+    <div class="bg-muho-card">
+      <div class="icon"><i data-lucide="rotate-cw"></i></div>
+      <h4>無段式轉速調整</h4>
+      <p>烘焙桶轉速支援無段式細微調整，最高達 70RPM。靈活對應不同含水率與密度的豆種。</p>
+    </div>
+    <div class="bg-muho-card">
+      <div class="icon"><i data-lucide="shield-check"></i></div>
+      <h4>頂級食安標準</h4>
+      <p>採用 食品級 304 不鏽鋼內鍋。耐高溫、防鏽蝕，確保每一鍋咖啡豆的純淨與安全。</p>
+    </div>
+  </div>
+</section>
+<section id="specs" class="specs-wrap">
+  <div class="title">
+    產品規格
+  </div>
+  <ul>
+    <li><span><i data-lucide="coffee"></i>機型</span><span>​沐火 MUHO-05</span></li>
+    <li><span><i data-lucide="scale"></i>烘焙量</span><span>100 ~ 500 g</span></li>
+    <li><span><i data-lucide="maximize"></i>機器尺寸</span><span>110V - 1200W</span></li>
+    <li><span><i data-lucide="plug"></i>電源</span><span>寬 30 × 長 55 × 高 65 CM</span></li>
+    <li><span><i data-lucide="weight"></i>機器重量</span><span>27 KG</span></li>
+  </ul>
+</section>
+<section id="preorder" class="preorder">
+  <p>LIMITED TIME PRE-ORDER</p>
+  <h5>限時預購中</h5>
+  <span>搶先入手．限量優惠</span>
+  <div class="label">預購期間</div>
+  <div class="infotxt">2026.5.1-2026.12.31</div>
+  <div class="label">預購優惠價</div>
+  <div class="pricetxt">79,000 <p>原價 NT$89,000</p></div>
+  <div class="label">預購享好禮</div>
+  <div class="gift">
+    <img src="./assets/image/try02.svg">
+    <p>生豆試喝包<br>(市價500元)</p>
+  </div>
+  <a href="#">立即預購</a>
+  <span>※限量50組，售完為止</span>
+</section>
+<section id="location" class="location">
+  <div class="title">
+    我們在這裡
+    <p>歡迎來訪，體驗烘豆的美好</p>
+  </div>
+  <div class="info">
+    <ul class="ltxt">
+      <li>
+        <i data-lucide="map-pin"></i>  
+        <p>實體門市 <br><span>台中市西屯區皇福街5號<br>(近水湳市場)</span></p>
+      </li>
+      <li>
+        <i data-lucide="clock"></i> 
+        <p>營業時間 <br><span>周一至周五 10:00-19:00 六日預約制</span></p>
+      </li>
+       <li>
+        <i data-lucide="phone"></i> 
+        <p>聯絡電話 <br><span>0912-935507</span></p>
+      </li>
+      <li>
+        <i data-lucide="mail"></i>  
+        <p>電子郵件 <br><span><a href="mailto:imzxyin@gmai.com">imzxyin@gmai.com</a></span></p>
+      </li>
+    </ul>
+    <div class="rmap"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7279.753454120315!2d120.65868867569966!3d24.17605567838244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34691768c60fed3f%3A0x83f6685a04f7dc8d!2z6bql54G25ZiO6YC8772c54aK5oCd5pyJ6ZmQ5YWs5Y-4772c54OY6LGG5qmf6LKp5ZSu772c5ZKW5ZWh54af6LGG772c5ZKW5ZWh5r--5o6b!5e0!3m2!1szh-TW!2stw!4v1782371496781!5m2!1szh-TW!2stw" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+  </div>
+</section>
+<section class="last-wrap">
+  <h2>
+    MUHO 沐火烘豆機<br>
+    <p>專注烘豆，從心出發</p>
+  </h2>
+  <span>我們相信，好的咖啡來自對細節的堅持與熱情。<br>
+從烘豆機的設計到每一次烘焙，<br>
+陪伴你探索屬於自己的風味旅程。</span>
+<div class="icon-wrap">
+  <div class="list">
+    <i data-lucide="layers" width="64" height="64"></i>
+    <p>台灣設計，在地製造</p>
+  </div>
+  <div class="list">
+    <i data-lucide="award" width="64" height="64"></i>  
+    <p>職人品質，細節把關</p>
+  </div>
+  <div class="list">
+    <i data-lucide="shield-check" width="64" height="64"></i>  
+    <p>安心保固，售後支援</p>
+  </div>
+  <div class="list">
+    <i data-lucide="messages-square" width="64" height="64"></i>  
+    <p>社群交流，烘豆分享</p>
+  </div>
+</div>
+<div class="fb"><span>追蹤我們 <a href="https://www.facebook.com/p/Muho-%E6%B2%90%E7%81%AB%E7%83%98%E8%B1%86%E6%A9%9F-61587568571459/" target="_blank"><img src="./assets/image/fb.svg"></a></span></div>
+</section>
+<footer>
+  <div class="logo"><img src="./assets/image/muho-logo1.svg" title="沐火烘豆機"><p>© 2026 熊思有限公司 All rights reserved.</p></div>
+  <div class="info">
+    <div><i data-lucide="building"></i>台中市西屯區皇福街5號</div>
+    <div><i data-lucide="phone"></i>0912-935-507</div>
+    <div><i data-lucide="mail"></i>imzxyin@gmai.com</div>
+  </div>
+</footer>
+<script>
+  lucide.createIcons();
+  // Navbar Scroll Effect
+  window.addEventListener('scroll', () => {
+    const nav = document.getElementById('navbar');
+    if (window.scrollY > 50) {
+        nav.classList.add('dark');
+    } else {
+        nav.classList.remove('dark');
+    }
+  });
+
+  $("#navbar li a[href^='#']").on('click', function(e) {
+
+    var hash = this.hash;
+
+    if (!hash || hash === "#") {
+        return;
+    }
+
+    e.preventDefault();
+
+    if ($(hash).length) {
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top - 25
+        }, 1000);
+    }
+    console.log($("#try").length);
+});
+  
+
+  // Interactive Canvas: Roast Curve Simulation
+        const canvas = document.getElementById('roastChart');
+        const ctx = canvas.getContext('2d');
+        let animationId;
+        
+        // Setup chart grid
+        function drawGrid() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.strokeStyle = '#333';
+            ctx.lineWidth = 1;
+            
+            // X & Y axes
+            ctx.beginPath();
+            ctx.moveTo(40, 20);
+            ctx.lineTo(40, canvas.height - 30);
+            ctx.lineTo(canvas.width - 20, canvas.height - 30);
+            ctx.stroke();
+
+            // Grid lines & labels
+            ctx.fillStyle = '#666';
+            ctx.font = '10px monospace';
+            for(let i=1; i<6; i++) {
+                let y = canvas.height - 30 - (i * 60);
+                ctx.fillText(i * 50 + '°C', 5, y + 4);
+                ctx.beginPath();
+                ctx.moveTo(40, y);
+                ctx.lineTo(canvas.width - 20, y);
+                ctx.strokeStyle = 'rgba(255,255,255,0.05)';
+                ctx.stroke();
+            }
+            
+            for(let i=1; i<10; i++) {
+                let x = 40 + (i * 55);
+                ctx.fillText(i + 'm', x - 5, canvas.height - 10);
+            }
+        }
+
+        function startChartAnimation() {
+            if(animationId) cancelAnimationFrame(animationId);
+            
+            drawGrid();
+            
+            let progress = 0;
+            const totalFrames = 180;
+            
+            // Curve Data Generators
+            // ET (Environment Temp) - Starts high, drops when beans added, then climbs steadily
+            const getET = (t) => {
+                const x = t / totalFrames;
+                if (x < 0.1) return 200 - (x * 10 * 80); // Drop to 120
+                return 120 + ((x - 0.1) * 1.1 * 120); // Climb to 252
+            };
+
+            // BT (Bean Temp) - Starts room temp, drops slightly, turns around, climbs S-curve
+            const getBT = (t) => {
+                const x = t / totalFrames;
+                if (x < 0.15) return 25 + (x * -20); // Turn around point (approx 1.5 mins)
+                const normalizedX = (x - 0.15) / 0.85;
+                // S-curve approximation
+                return 20 + (200 * (1 / (1 + Math.exp(-8 * (normalizedX - 0.5))))); 
+            };
+
+            // Drawing coordinates mapping
+            const mapX = (t) => 40 + (t / totalFrames) * (canvas.width - 60);
+            const mapY = (temp) => canvas.height - 30 - (temp / 250) * 300;
+
+            function animate() {
+                progress++;
+                
+                // Draw ET Line (Red)
+                if (progress > 1) {
+                    ctx.beginPath();
+                    ctx.moveTo(mapX(progress-1), mapY(getET(progress-1)));
+                    ctx.lineTo(mapX(progress), mapY(getET(progress)));
+                    ctx.strokeStyle = '#ef4444'; // Tailwind red-500
+                    ctx.lineWidth = 2;
+                    ctx.stroke();
+                }
+
+                // Draw BT Line (Gold)
+                if (progress > 1) {
+                    ctx.beginPath();
+                    ctx.moveTo(mapX(progress-1), mapY(getBT(progress-1)));
+                    ctx.lineTo(mapX(progress), mapY(getBT(progress)));
+                    ctx.strokeStyle = '#C5A059'; // Muho Gold
+                    ctx.lineWidth = 3;
+                    
+                    // Add glow effect for BT line
+                    ctx.shadowColor = 'rgba(197, 160, 89, 0.5)';
+                    ctx.shadowBlur = 10;
+                    ctx.stroke();
+                    
+                    // Reset shadow
+                    ctx.shadowBlur = 0;
+                }
+
+                if (progress < totalFrames) {
+                    animationId = requestAnimationFrame(animate);
+                } else {
+                    // Draw final markers (First Crack, etc.)
+                    ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+                    ctx.font = '12px sans-serif';
+                    ctx.fillText('First Crack', mapX(totalFrames * 0.75), mapY(getBT(totalFrames * 0.75)) - 15);
+                    ctx.beginPath();
+                    ctx.arc(mapX(totalFrames * 0.75), mapY(getBT(totalFrames * 0.75)), 4, 0, Math.PI*2);
+                    ctx.fill();
+                }
+            }
+
+            animate();
+        }
+
+        // Initial Grid Draw
+        drawGrid();
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://muho-roaster.github.io/muho/sitemap.xml
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
