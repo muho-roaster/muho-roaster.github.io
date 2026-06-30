@@ -705,6 +705,13 @@ header .rlink li:last-child a {
   margin: 55px 0 0;
   display: block;
 }
+.preorder h6 {
+  font-size: 1.125em;
+  color: #fff;
+  padding: 0;
+  margin: 16px 0 0;
+  letter-spacing: 0.2em;
+}
 .preorder span {
   font-size: 0.9375em;
   color: #fff;
@@ -799,9 +806,13 @@ header .rlink li:last-child a {
   color: #2F363E;
   font-weight: 300;
 }
+.location .info .ltxt li p span a {
+  color: #2F363E;
+  text-decoration: underline;
+}
 .location .info .rmap {
   width: 60%;
-  height: 350px;
+  height: 400px;
 }
 @media all and (max-width: 431px) {
   .location .info .rmap {
@@ -810,7 +821,7 @@ header .rlink li:last-child a {
 }
 .location .info .rmap iframe {
   width: 100%;
-  height: 350px;
+  height: 400px;
 }
 
 .last-wrap {
@@ -898,8 +909,13 @@ header .rlink li:last-child a {
 .last-wrap .icon-wrap .list p {
   color: #fff;
 }
-.last-wrap .icon-wrap .list:last-child, .last-wrap .icon-wrap .list:nth-child(2) {
+.last-wrap .icon-wrap .list:last-child {
   border: none;
+}
+@media all and (max-width: 870px) {
+  .last-wrap .icon-wrap .list:nth-child(2) {
+    border: none;
+  }
 }
 .last-wrap .fb {
   display: block;
@@ -986,7 +1002,7 @@ footer .info {
   justify-content: start;
   gap: 0.5rem;
   color: rgb(102, 102, 102);
-  font-size: 0.875em;
+  font-size: 0.9375em;
   align-items: center;
 }
 @media all and (max-width: 431px) {
