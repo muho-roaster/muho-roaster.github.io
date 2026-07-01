@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=no">
+  <meta name="description" content="專為居家設計的 muho 沐火智能陶瓷輻射電熱烘豆機！有自動的火力控制、完善的抽風排煙系統，相同Artisan即時監控烘焙曲線與 RoR 升溫率。體積小巧不佔空間，免除商用烘豆機的昂貴與笨重，讓您在家輕鬆烘出精品咖啡生豆的極致風味，在家烘豆協槓創業的最佳選擇。">
+  <meta name="keywords" content="muho沐火烘豆機, 家用烘豆機推薦, 智能烘豆機, 電熱烘豆機, 無煙烘豆機, 咖啡烘豆機價格, 小型烘豆機">
+  <meta name="author" content="沐火烘豆機" />
+  <meta name="copyright" content="沐火烘豆機"/>
+  <meta property="og:title" content="關於沐火 | muho 沐火智能輻射電熱烘豆機">
+  <meta property="og:description" content="專為居家設計的 muho 沐火智能陶瓷輻射電熱烘豆機！有自動的火力控制、完善的抽風排煙系統，相同Artisan即時監控烘焙曲線與 RoR 升溫率。體積小巧不佔空間，免除商用烘豆機的昂貴與笨重，讓您在家輕鬆烘出精品咖啡生豆的極致風味，在家烘豆協槓創業的最佳選擇。">
+  <meta property="og:image" content="./assets/image/favicon.ico">
+  <link rel="icon" href="./assets/image/favicon.ico" sizes="any">
+  <title>關於沐火 | muho 沐火智能輻射電熱烘豆機</title>
+  
+   <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="stylesheet" href="./assets/style/app.min.css">
+  <script src="./assets/script/jquery-3.6.1.min.js"></script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-446FJ8Q0Y2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-446FJ8Q0Y2');
+</script>
+</head>
+<body>
+<header id="navbar" class="dark">
+  <a href="index.html"><img src="./assets/image/muho-logo.svg" class="muho" title="沐火烘豆機"></a>
+  <ul class="rlink">
+    <li><a href="index.html">首頁</a></li>
+    
+  </ul>
+</header>
+<section class="about">
+  <main>
+    <h1>About Muho<br>沐火烘豆機</h1>
+    <p>多年來，我們持續研究咖啡烘焙與設備設計，深知一台好的烘豆機，不只是加熱咖啡豆的工具，更是幫助每位烘豆者穩定呈現風味的重要夥伴。<br><br>因此，我們投入大量時間反覆測試、改良每一個細節，就是為了打造出兼具穩定性、操作直覺與精準控制的烘豆機，讓無論是剛踏入烘豆領域的新手，或是追求風味表現的專業烘豆師，都能享受烘豆的樂趣，並忠實呈現每支咖啡豆的最佳風味。<br><br>Muho 沐火，相信好的設備源自對細節的堅持，也相信每一次烘焙，都是與咖啡對話的開始。<br><br>期待透過 Muho 沐火烘豆機，陪伴更多咖啡愛好者，一起烘出屬於自己的理想風味。</p>
+  </main>
+</section>
+
+<footer>
+   <div class="top">
+      <ul>
+      <li class="title">About Us</li>
+      <li><a href="about-muho.html">關於沐火</a></li>
+    </ul>
+    <ul>
+      <li class="title">Follow</li>
+      <li class="fl"><a class="mar" href="https://www.facebook.com/p/Muho-%E6%B2%90%E7%81%AB%E7%83%98%E8%B1%86%E6%A9%9F-61587568571459/" target="_blank"><img src="./assets/image/fb.svg"></a><a href="https://line.me/R/ti/p/@056zkght" target="_blank"><img src="./assets/image/line.svg"></a></li>
+    </ul>
+    <ul >
+        <li class="title">Contact Us</li>
+        <li><i data-lucide="phone"></i>0912-935-507</li>
+        <li><i data-lucide="mail"></i><a href="mailto:imzxyin@gmai.com">imzxyin@gmai.com</a></li>
+        <li><i data-lucide="scroll-text"></i>60765047</li>
+      </ul>
+   </div>
+   <div class="copyright">
+    熊思有限公司  地址：407 台中市西屯區皇福街5號<br>
+MUHO Co.,Ltd. © Copyright 2025. All Rights Reserved.
+   </div>
+  
+</footer>
+<script>
+  lucide.createIcons();
+ 
+
+  $("#navbar li a[href^='#']").on('click', function(e) {
+
+    var hash = this.hash;
+
+    if (!hash || hash === "#") {
+        return;
+    }
+
+    e.preventDefault();
+
+    if ($(hash).length) {
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top - 25
+        }, 1000);
+    }
+    console.log($("#try").length);
+});
+  
+
+  // Interactive Canvas: Roast Curve Simulation
+        const canvas = document.getElementById('roastChart');
+        const ctx = canvas.getContext('2d');
+        let animationId;
+        
+        // Setup chart grid
+        function drawGrid() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.strokeStyle = '#333';
+            ctx.lineWidth = 1;
+            
+            // X & Y axes
+            ctx.beginPath();
+            ctx.moveTo(40, 20);
+            ctx.lineTo(40, canvas.height - 30);
+            ctx.lineTo(canvas.width - 20, canvas.height - 30);
+            ctx.stroke();
+
+            // Grid lines & labels
+            ctx.fillStyle = '#666';
+            ctx.font = '10px monospace';
+            for(let i=1; i<6; i++) {
+                let y = canvas.height - 30 - (i * 60);
+                ctx.fillText(i * 50 + '°C', 5, y + 4);
+                ctx.beginPath();
+                ctx.moveTo(40, y);
+                ctx.lineTo(canvas.width - 20, y);
+                ctx.strokeStyle = 'rgba(255,255,255,0.05)';
+                ctx.stroke();
+            }
+            
+            for(let i=1; i<10; i++) {
+                let x = 40 + (i * 55);
+                ctx.fillText(i + 'm', x - 5, canvas.height - 10);
+            }
+        }
+
+        function startChartAnimation() {
+            if(animationId) cancelAnimationFrame(animationId);
+            
+            drawGrid();
+            
+            let progress = 0;
+            const totalFrames = 180;
+            
+            // Curve Data Generators
+            // ET (Environment Temp) - Starts high, drops when beans added, then climbs steadily
+            const getET = (t) => {
+                const x = t / totalFrames;
+                if (x < 0.1) return 200 - (x * 10 * 80); // Drop to 120
+                return 120 + ((x - 0.1) * 1.1 * 120); // Climb to 252
+            };
+
+            // BT (Bean Temp) - Starts room temp, drops slightly, turns around, climbs S-curve
+            const getBT = (t) => {
+                const x = t / totalFrames;
+                if (x < 0.15) return 25 + (x * -20); // Turn around point (approx 1.5 mins)
+                const normalizedX = (x - 0.15) / 0.85;
+                // S-curve approximation
+                return 20 + (200 * (1 / (1 + Math.exp(-8 * (normalizedX - 0.5))))); 
+            };
+
+            // Drawing coordinates mapping
+            const mapX = (t) => 40 + (t / totalFrames) * (canvas.width - 60);
+            const mapY = (temp) => canvas.height - 30 - (temp / 250) * 300;
+
+            function animate() {
+                progress++;
+                
+                // Draw ET Line (Red)
+                if (progress > 1) {
+                    ctx.beginPath();
+                    ctx.moveTo(mapX(progress-1), mapY(getET(progress-1)));
+                    ctx.lineTo(mapX(progress), mapY(getET(progress)));
+                    ctx.strokeStyle = '#ef4444'; // Tailwind red-500
+                    ctx.lineWidth = 2;
+                    ctx.stroke();
+                }
+
+                // Draw BT Line (Gold)
+                if (progress > 1) {
+                    ctx.beginPath();
+                    ctx.moveTo(mapX(progress-1), mapY(getBT(progress-1)));
+                    ctx.lineTo(mapX(progress), mapY(getBT(progress)));
+                    ctx.strokeStyle = '#C5A059'; // Muho Gold
+                    ctx.lineWidth = 3;
+                    
+                    // Add glow effect for BT line
+                    ctx.shadowColor = 'rgba(197, 160, 89, 0.5)';
+                    ctx.shadowBlur = 10;
+                    ctx.stroke();
+                    
+                    // Reset shadow
+                    ctx.shadowBlur = 0;
+                }
+
+                if (progress < totalFrames) {
+                    animationId = requestAnimationFrame(animate);
+                } else {
+                    // Draw final markers (First Crack, etc.)
+                    ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
+                    ctx.font = '12px sans-serif';
+                    ctx.fillText('First Crack', mapX(totalFrames * 0.75), mapY(getBT(totalFrames * 0.75)) - 15);
+                    ctx.beginPath();
+                    ctx.arc(mapX(totalFrames * 0.75), mapY(getBT(totalFrames * 0.75)), 4, 0, Math.PI*2);
+                    ctx.fill();
+                }
+            }
+
+            animate();
+        }
+
+        // Initial Grid Draw
+        drawGrid();
+</script>
+</body>
+</html>
