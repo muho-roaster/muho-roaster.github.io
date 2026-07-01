@@ -886,69 +886,117 @@ header{
 }
 
 footer{
-    display: flex;
-    padding: 1.2rem 10rem;
-    background-color: #fff;
-    justify-content: space-between;
-    @include w1280{
-      padding: 1.2rem 4rem;  
-      display: flex;
-    }
-    @include w430{
-       padding: 1.2rem 2rem; 
-       width: calc(100% - 4rem);
-       flex-direction: column;
-      
-    }
-    .logo{
-        @include w430{
-            width: 100%;
-            order: 2;
-            margin: 10px 0 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            p{
-                margin: 5px 0 0;
-            }
-        }
-        img{
-            width: 110px;
-            margin: 0 auto;
-        }
-        p{
-            font-size: 0.875rem;
-            line-height: 1.25rem;
-            color: rgb(107,114,128);
-        }
-    }
-    .info{
+    font-family: 'Noto Sans TC', 'sans-serif';
+    
+    background-color: #2f363e;
+    color: #fff;
+    box-shadow: 0 -1px 40px 0 rgba(0, 0, 0, 0.3);
+    
+    .top{
         display: flex;
-        justify-content: start;
-        gap: 0.5rem;
-        color: rgb(102, 102, 102);
-        font-size: .9375em;
-        align-items: center;
+        padding: 1.2rem 10rem;
+        @include w1280{
+            padding: 1.2rem 4rem;  
+            display: flex;
+        }
         @include w430{
+            padding: 1.2rem 2rem; 
+            width: calc(100% - 4rem);
             flex-direction: column;
-           
-            order: 1;
         }
-        > div{
-                align-items: center;
-                display: flex;
-                margin: 0 24px 0 0;
-            i{
-                width: 14px;
-                height: 14px;
+        ul{
+            padding: 0;
+            margin: 0 55px 0 0;
+            @include w430{
+                margin: 0 0 24px;
+               
             }
-            svg{
-                color: $gold;
-                width: 16px;
-                margin: 0 8px 0 0;
-            }  
-        }
-        
+            &:last-child{
+                
+                margin: 0 0 0 auto;
+                @include w430{
+                    margin: 0;
+                }
+                li{
+                    align-items: center;
+                    display: flex;
+                    margin: 0 0 12px 0;
+                    font-size: .9375em;
+                    letter-spacing: 0.07em;
+                    color: rgba($color: #fff, $alpha: .7);
+                    i{
+                        width: 14px;
+                        height: 14px;
+                    }
+                    svg{
+                        color: $gold;
+                        width: 16px;
+                        margin: 0 8px 0 0;
+                    }  
+                }
+            }
+            li{
+                &.title{
+                    font-size: 1em;
+                    margin: 0 0 14px;
+                    color: #fff;
+                    letter-spacing: .08em;
+                }
+                a{
+                    display: block;
+                    font-size: 1.0625em;
+                    color: rgba($color: #fff, $alpha: .7);
+                    transition: all .6s;
+                    &:hover{
+                    color: rgba($color: #fff, $alpha: 1); 
+                    }
+                    img{
+                        width: 24px;
+                    }
+                    &.mar{
+                        margin: 0 14px 0 0;
+                    }
+                }
+                &.fl{
+                    display: flex;
+                }
+            }
+        }  
     }
+    .copyright{
+        border-top: 1px solid #585C5F;
+        padding: 10px 0;
+        color: rgba($color: #fff, $alpha: .7);
+        text-align: center;
+        font-size: .875em;
+        line-height: 1.5;
+    }
+    // .info{
+    //     display: flex;
+    //     justify-content: start;
+    //     gap: 0.5rem;
+    //     color: rgb(102, 102, 102);
+    //     font-size: .9375em;
+    //     align-items: center;
+    //     @include w430{
+    //         flex-direction: column;
+           
+    //         order: 1;
+    //     }
+    //     > div{
+    //             align-items: center;
+    //             display: flex;
+    //             margin: 0 24px 0 0;
+    //         i{
+    //             width: 14px;
+    //             height: 14px;
+    //         }
+    //         svg{
+    //             color: $gold;
+    //             width: 16px;
+    //             margin: 0 8px 0 0;
+    //         }  
+    //     }
+        
+    // }
 }

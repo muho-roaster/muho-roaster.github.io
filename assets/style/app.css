@@ -956,72 +956,91 @@ header .rlink li:last-child a {
 }
 
 footer {
+  font-family: "Noto Sans TC", "sans-serif";
+  background-color: #2f363e;
+  color: #fff;
+  box-shadow: 0 -1px 40px 0 rgba(0, 0, 0, 0.3);
+}
+footer .top {
   display: flex;
   padding: 1.2rem 10rem;
-  background-color: #fff;
-  justify-content: space-between;
 }
 @media all and (max-width: 1280px) {
-  footer {
+  footer .top {
     padding: 1.2rem 4rem;
     display: flex;
   }
 }
 @media all and (max-width: 431px) {
-  footer {
+  footer .top {
     padding: 1.2rem 2rem;
     width: calc(100% - 4rem);
     flex-direction: column;
   }
 }
+footer .top ul {
+  padding: 0;
+  margin: 0 55px 0 0;
+}
 @media all and (max-width: 431px) {
-  footer .logo {
-    width: 100%;
-    order: 2;
-    margin: 10px 0 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  footer .logo p {
-    margin: 5px 0 0;
+  footer .top ul {
+    margin: 0 0 24px;
   }
 }
-footer .logo img {
-  width: 110px;
-  margin: 0 auto;
+footer .top ul:last-child {
+  margin: 0 0 0 auto;
 }
-footer .logo p {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  color: rgb(107, 114, 128);
+@media all and (max-width: 431px) {
+  footer .top ul:last-child {
+    margin: 0;
+  }
 }
-footer .info {
+footer .top ul:last-child li {
+  align-items: center;
   display: flex;
-  justify-content: start;
-  gap: 0.5rem;
-  color: rgb(102, 102, 102);
+  margin: 0 0 12px 0;
   font-size: 0.9375em;
-  align-items: center;
+  letter-spacing: 0.07em;
+  color: rgba(255, 255, 255, 0.7);
 }
-@media all and (max-width: 431px) {
-  footer .info {
-    flex-direction: column;
-    order: 1;
-  }
-}
-footer .info > div {
-  align-items: center;
-  display: flex;
-  margin: 0 24px 0 0;
-}
-footer .info > div i {
+footer .top ul:last-child li i {
   width: 14px;
   height: 14px;
 }
-footer .info > div svg {
+footer .top ul:last-child li svg {
   color: #C5A059;
   width: 16px;
   margin: 0 8px 0 0;
+}
+footer .top ul li.title {
+  font-size: 1em;
+  margin: 0 0 14px;
+  color: #fff;
+  letter-spacing: 0.08em;
+}
+footer .top ul li a {
+  display: block;
+  font-size: 1.0625em;
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.6s;
+}
+footer .top ul li a:hover {
+  color: white;
+}
+footer .top ul li a img {
+  width: 24px;
+}
+footer .top ul li a.mar {
+  margin: 0 14px 0 0;
+}
+footer .top ul li.fl {
+  display: flex;
+}
+footer .copyright {
+  border-top: 1px solid #585C5F;
+  padding: 10px 0;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  font-size: 0.875em;
+  line-height: 1.5;
 }
