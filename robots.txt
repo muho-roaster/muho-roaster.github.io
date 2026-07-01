@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://muho-roaster.github.io/muho/sitemap.xml
+Sitemap: https://muho-roaster.github.io/sitemap.xml
 
 User-agent: GPTBot
 Allow: /
