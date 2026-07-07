@@ -153,7 +153,7 @@ header .rlink li:last-child a {
     font-size: 3rem;
   }
 }
-.slider-bg .txt h2 {
+.slider-bg .txt p {
   font-size: 1.5rem;
   line-height: 2rem;
   color: #C5A059;
@@ -163,11 +163,11 @@ header .rlink li:last-child a {
   padding: 0;
 }
 @media all and (max-width: 1280px) {
-  .slider-bg .txt h2 {
+  .slider-bg .txt p {
     font-size: 1.2rem;
   }
 }
-.slider-bg .txt p {
+.slider-bg .txt h2 {
   color: rgb(156, 163, 175);
   margin: 2rem 0 0;
   font-family: "Noto Sans TC", sans-serif;
@@ -197,7 +197,7 @@ header .rlink li:last-child a {
   background: #EDEDED;
   padding: 4rem 0 40px 0;
 }
-.try-wrap .title {
+.try-wrap h2 {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -206,7 +206,7 @@ header .rlink li:last-child a {
   margin-bottom: 4rem;
   font-weight: 600;
 }
-.try-wrap .title::before {
+.try-wrap h2::before {
   content: "FIELD TEST";
   display: block;
   color: #C5A059;
@@ -215,7 +215,7 @@ header .rlink li:last-child a {
   letter-spacing: 0.3em;
   margin: 0 0 0.75rem;
 }
-.try-wrap .title::after {
+.try-wrap h2::after {
   content: "";
   display: block;
   width: 6rem;
@@ -304,7 +304,7 @@ header .rlink li:last-child a {
     padding: 4rem 2rem;
   }
 }
-.feature-wrap .title {
+.feature-wrap h2 {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -313,7 +313,7 @@ header .rlink li:last-child a {
   margin-bottom: 4rem;
   font-weight: 600;
 }
-.feature-wrap .title::before {
+.feature-wrap h2::before {
   content: "CORE FEATURES";
   display: block;
   color: #C5A059;
@@ -322,7 +322,7 @@ header .rlink li:last-child a {
   letter-spacing: 0.3em;
   margin: 0 0 0.75rem;
 }
-.feature-wrap .title p {
+.feature-wrap h2 p {
   letter-spacing: 0.025em;
   font-weight: 300;
   font-size: 1.25rem;
@@ -330,7 +330,7 @@ header .rlink li:last-child a {
   margin-top: 1.5rem;
   display: contents;
 }
-.feature-wrap .title p::before {
+.feature-wrap h2 p::before {
   content: "";
   display: block;
   width: 6rem;
@@ -417,7 +417,7 @@ header .rlink li:last-child a {
     padding: 4rem 1rem;
   }
 }
-.specs-wrap .title {
+.specs-wrap h2 {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -427,7 +427,7 @@ header .rlink li:last-child a {
   margin-bottom: 4rem;
   font-weight: 600;
 }
-.specs-wrap .title::before {
+.specs-wrap h2::before {
   content: "SPECIFICATION";
   display: block;
   color: #C5A059;
@@ -436,7 +436,7 @@ header .rlink li:last-child a {
   letter-spacing: 0.3em;
   margin: 0 0 0.75rem;
 }
-.specs-wrap .title::after {
+.specs-wrap h2::after {
   content: "";
   display: block;
   width: 6rem;
@@ -627,7 +627,7 @@ header .rlink li:last-child a {
   font-size: 0.9375em;
   letter-spacing: 0.2em;
 }
-.preorder h5 {
+.preorder h3 {
   padding: 0;
   margin: 0;
   color: #fff;
@@ -734,7 +734,7 @@ header .rlink li:last-child a {
     width: calc(100% - 4rem);
   }
 }
-.location .title {
+.location h2 {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -744,11 +744,11 @@ header .rlink li:last-child a {
   font-weight: 600;
 }
 @media all and (max-width: 431px) {
-  .location .title {
+  .location h2 {
     margin-bottom: 2rem;
   }
 }
-.location .title::before {
+.location h2::before {
   content: "OUR LOCATION";
   display: block;
   color: #C5A059;
@@ -757,7 +757,7 @@ header .rlink li:last-child a {
   letter-spacing: 0.3em;
   margin: 0 0 0.75rem;
 }
-.location .title p {
+.location h2 p {
   letter-spacing: 0.025em;
   font-weight: 300;
   font-size: 1.25rem;
@@ -765,7 +765,7 @@ header .rlink li:last-child a {
   margin-top: 1.5rem;
   display: contents;
 }
-.location .title p::before {
+.location h2 p::before {
   content: "";
   display: block;
   width: 6rem;
