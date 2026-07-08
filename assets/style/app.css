@@ -1109,3 +1109,27 @@ footer .copyright {
   font-family: "Noto Sans TC", "sans-serif";
   line-height: 1.8;
 }
+.about main .btn-wrap {
+  position: relative;
+  display: flex;
+  margin: 36px 0 0;
+  flex-wrap: wrap;
+}
+.about main .btn-wrap a {
+  padding: 0 28px;
+  height: 50px;
+  background-color: #c5a059;
+  border-radius: 50px;
+  color: #fff;
+  line-height: 50px;
+  text-align: center;
+  margin: 0 10px 16px 0;
+  display: block;
+  white-space: nowrap;
+}
+@media all and (max-width: 870px) {
+  .about main .btn-wrap a {
+    width: 100%;
+    padding: 0;
+  }
+}
