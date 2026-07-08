@@ -171,6 +171,8 @@ header .rlink li:last-child a {
   color: rgb(156, 163, 175);
   margin: 2rem 0 0;
   font-family: "Noto Sans TC", sans-serif;
+  font-size: 1.125em;
+  font-weight: 500;
 }
 .slider-bg .txt .a-wrap {
   display: flex;
