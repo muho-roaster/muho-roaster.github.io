@@ -31,9 +31,9 @@
   <img src="./assets/image/muho-logo.svg" class="muho" alt="沐火烘豆機logo" title="沐火烘豆機">
   <ul class="rlink">
     <li><a href="#try">現場試機</a></li>
-    <!-- <li><a href="#experience">智慧體驗</a></li> -->
     <li><a href="#feature">產品特色</a></li>
     <li><a href="#specs">規格介紹</a></li>
+    <li><a href="#trycoffee">試喝申請</a></li>
     <li><a href="#location">體驗地點</a></li>
     <li><a href="#preorder">限時預購</a></li>
   </ul>
@@ -46,6 +46,7 @@
 體驗沐火烘豆機帶來的精準溫控與無與倫比的絕佳風味。</h2>
       <ul class="a-wrap">
         <li><a href="https://line.me/R/ti/p/@056zkght" target="_blank">加入好友預約</a></li>
+        <li><a href="#trycoffee">先試喝看看</a></li>
       </ul>
     
   </div>
@@ -73,8 +74,8 @@
     </div>
   </div>
   <div class="btnwrap">
-  
     <a href="https://line.me/R/ti/p/@056zkght" target="_blank">加入好友預約</a>
+    
   </div>
 </section>
 <!-- <section id="experience" class="experience">
@@ -157,6 +158,42 @@
   <h6>付款及運送方式</h6>
   <span>我們所提供的產品配送區域範圍目前僅限台灣本島。<br>
 商品之實際配貨日期、退換貨日期，依我們向您另行通知之內容為準。</span>
+</section>
+<section id="trycoffee" class="try-coffee">
+  <h2>精品咖啡試喝組</h2>
+  <p>還沒喝過沐火的咖啡?<br>先從一杯精品咖啡開始</p>
+  <span class="gray">精選三款不同產區精品咖啡，<br>
+從果香、花香到巧克力調，<br>
+一次找到最適合你的風味。</span>
+<span class="price">$199</span>
+<div class="btnwrap">
+  <a href="https://myship.7-11.com.tw/general/detail/GM2606100806113" target="_blank">立即體驗</a>
+  <a href="try.html">探索三款風味</a>
+</div>
+<span class="note">20g x 3包 ┃ 限量試喝價</span>
+<div class="fav">
+  <div class="list">
+    <img src="./assets/image/tryicon1.svg" alt="">
+    <div class="txt">
+      <h6>新鮮烘焙</h6>
+      <p>下單後新鮮烘焙，確保最佳風味</p>
+    </div>
+  </div>
+  <div class="list">
+    <img src="./assets/image/tryicon2.svg" alt="">
+    <div class="txt">
+      <h6>嚴選生豆</h6>
+      <p>精選世界各地優質產區生豆</p>
+    </div>
+  </div>
+  <div class="list">
+    <img src="./assets/image/tryicon3.svg" alt="">
+    <div class="txt">
+      <h6>沖泡適合</h6>
+      <p>適合手沖、濾掛等多種方式</p>
+    </div>
+  </div>
+</div>
 </section>
 <section id="location" class="location">
   <h2>
@@ -252,7 +289,7 @@ MUHO Co.,Ltd. © Copyright 2025. All Rights Reserved.
     }
   });
 
-  $("#navbar li a[href^='#']").on('click', function(e) {
+  $("#navbar li a[href^='#'],.slider-bg .txt .a-wrap li a[href^='#']").on('click', function(e) {
 
     var hash = this.hash;
 
