@@ -365,6 +365,13 @@ header .rlink li:last-child a {
   color: #D9A14C;
   font-size: 0.5526315em;
 }
+.try-coffee .price::after {
+  content: "賣貨便免運中";
+  display: block;
+  color: #D9A14C;
+  font-size: 0.3em;
+  margin: 0 0 0 8px;
+}
 .try-coffee .btnwrap {
   display: flex;
   margin: 16px 0 0;
